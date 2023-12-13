@@ -1,4 +1,4 @@
-package org.jdvn.lis.valuation.autoconfigure;
+package org.jdvn.lis.valuation.configuration;
 
 import java.util.Arrays;
 import java.util.List;

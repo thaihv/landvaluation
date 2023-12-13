@@ -1,4 +1,4 @@
-package org.jdvn.lis.valuation.autoconfigure;
+package org.jdvn.lis.valuation.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
