@@ -9,17 +9,22 @@ import javax.persistence.MappedSuperclass;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+
 @MappedSuperclass
 @SuppressWarnings("serial")
 public abstract class DomainObject<ID extends Serializable> implements Serializable {
 
 	@Column(nullable = false)
+	@JsonSerialize(using = LocalDateTimeSerializer.class)
 	private LocalDateTime createdAt = LocalDateTime.now();
 
 	@Column(length = 100)
 	private String createdBy;
 
 	@Column(nullable = false)
+	@JsonSerialize(using = LocalDateTimeSerializer.class)
 	private LocalDateTime updatedAt = LocalDateTime.now();
 
 	@Column(length = 100)
