@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
+	<meta charset="UTF-8">
    <link th:href="@{/style/main.css}" type="text/css" rel="stylesheet" media="screen,projection"/>
    <title>Login</title>
 </head>
@@ -34,6 +35,9 @@
         <button type="submit" th:text="#{login}" th:title="#{login.tooltip}">Login</button>
       </div>
    </div>
+</form>
+<form name="f" th:action="@{/signup}" method="post">
+	<button type="submit" th:text="#{signup}" th:title="#{signup.tooltip}">Signup</button>
 </form>
 </div>
 </body>

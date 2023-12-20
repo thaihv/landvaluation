@@ -1,4 +1,4 @@
-package org.jdvn.lis.valuation.dto;
+package org.jdvn.lis.valuation.model;
 
 public class ProcessDefinitionDto {
    private String id;
