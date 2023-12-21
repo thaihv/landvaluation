@@ -33,11 +33,9 @@
    <div class="row">
       <div>
         <button type="submit" th:text="#{login}" th:title="#{login.tooltip}">Login</button>
+        <a th:href="@{/signup}" th:text="#{signup}" th:title="#{signup.tooltip}">Sign Up</a>
       </div>
    </div>
-</form>
-<form name="f" th:action="@{/signup}" method="post">
-	<button type="submit" th:text="#{signup}" th:title="#{signup.tooltip}">Signup</button>
 </form>
 </div>
 </body>
